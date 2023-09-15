@@ -23,7 +23,7 @@ class LoginRepository{
     return usuarios;
   }
 
-  Login finByLogin(Login login){
+  Login? finByLogin(Login login){
     var loginEncontrado;
     for (var u in usuarios) {
       if(u.username == login.username && u.senha == login.senha){
